@@ -1,0 +1,230 @@
+body {
+    background-color: #EFE3CC;
+    background-image: radial-gradient(circle at 50% 0%, #F6EEDB 0%, #EFE3CC 70%);
+    font-family: 'EB Garamond', Georgia, serif;
+    color: #3B2A1A;
+    margin: 0;
+    padding: 60px;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: #5C1F2E;
+    letter-spacing: 1px;
+}
+
+header p {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 60px;
+    color: #6B5842;
+}
+
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #5C1F2E;
+    border-bottom: 2px solid #B8860B;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+button, .card-button {
+    background-color: #5C1F2E;
+    margin-top: 20px;
+    color: #F6EEDB;
+    border: 1px solid #B8860B;
+    padding: 15px 30px;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .card-button:hover {
+    transform: scale(1.03);
+    background-color: #7A2A3E;
+}
+
+.card-button {
+    font-size: 14px;
+    padding: 12px 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    background: #FBF6EA;
+    width: 280px;
+    border: 1px solid #C9A66B;
+    border-radius: 4px;
+    padding: 25px;
+    box-shadow: 4px 4px 0px rgba(92, 31, 46, 0.15);
+    transition: .3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+.hidden {
+    display: none;
+}
+
+#currentForm, #finishedForm {
+    margin-top: 20px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'EB Garamond', Georgia, serif;
+    border: 1px solid #C9A66B;
+    background: #FBF6EA;
+    color: #3B2A1A;
+    border-radius: 3px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#starRating {
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.star {
+    color: #C9A66B;
+    transition: color 0.2s;
+}
+
+.star.selected {
+    color: #B8860B;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 17px;
+    color: #4A3728;
+    min-height: 60px;
+}
+
+.quote-source {
+    font-size: 14px;
+    color: #8A7355;
+    text-align: right;
+}
+
+/* Library page */
+#backHome {
+    max-width: 220px;
+    margin: 0 auto 40px auto;
+}
+
+#bookshelf {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #4A3728;
+    border-radius: 6px;
+    padding: 30px 25px 15px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: inset 0 -12px 0 #3B2A1A, 0 10px 20px rgba(0,0,0,.2);
+}
+
+.spine {
+    width: 55px;
+    height: 230px;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.spine:hover {
+    transform: translateY(-10px);
+}
+
+.spine span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #F6EEDB;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px;
+}
+
+.no-books-message {
+    font-size: 18px;
+    color: #6B5842;
+    padding: 40px;
+}
+
+#bookDetails {
+    max-width: 500px;
+    margin: 30px auto 0 auto;
+    background: #FBF6EA;
+    border: 1px solid #C9A66B;
+    border-radius: 4px;
+    padding: 25px 30px;
+    text-align: left;
+    box-shadow: 4px 4px 0px rgba(92, 31, 46, 0.15);
+}
+
+#bookDetails h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #5C1F2E;
+    margin: 0 0 5px 0;
+}
+
+.library-date {
+    font-size: 14px;
+    color: #8A7355;
+    margin-bottom: 8px;
+}
+
+.library-rating {
+    color: #B8860B;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.library-review {
+    font-style: italic;
+    color: #4A3728;
+}

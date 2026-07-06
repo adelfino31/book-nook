@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Nook</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>📚 The Book Nook 📚</h1>
+        <p>Your cozy little corner of the literary world.</p>
+    </header>
+
+    <main>
+        <div class="dashboard">
+            <section>
+                <h2>📖 Currently Reading</h2>
+
+                <p id="currentReading">No books yet...</p>
+                <p id="currentPage"></p>
+
+                <button id="openCurrentForm" class="card-button">
+                    What are you reading? -- click to add new book
+                </button>
+
+                <button id="markFinished" class="card-button">
+                    ✅ Mark as Finished
+                </button>
+
+                <div id="currentForm" class="hidden">
+                    <input id="title" type="text" placeholder="Book Title">
+                    <br><br>
+                    <input id="author" type="text" placeholder="Author">
+                    <br><br>
+                    <input id="page" type="number" placeholder="Page you're on">
+                    <br><br>
+                    <button id="saveCurrentBook">Save Book</button>
+                </div>
+            </section>
+
+            <section>
+                <h2>✅ Recently Finished</h2>
+
+                <p id="finishedBook">No books yet...</p>
+                <p id="finishedRatingDisplay"></p>
+
+                <button id="openFinishedForm" class="card-button">
+                    Finished a book? -- click to add it
+                </button>
+
+                <div id="finishedForm" class="hidden">
+                    <input id="finishedTitle" type="text" placeholder="Book Title">
+                    <br><br>
+                    <input id="finishedAuthor" type="text" placeholder="Author">
+                    <br><br>
+                    <div id="starRating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <br>
+                    <textarea id="finishedReview" placeholder="Write a review (optional)"></textarea>
+                    <br><br>
+                    <button id="saveFinishedBook">Save Book</button>
+                </div>
+            </section>
+
+            <section>
+                <h2>🎯 Reading Goal</h2>
+
+                <p id="goalCount">0 / 50 Books</p>
+
+                <a href="library.html" class="card-button" id="viewLibrary">
+                    📚 See All Books Read
+                </a>
+            </section>
+
+            <section>
+                <h2>✨ Quote of the Day</h2>
+
+                <p id="quoteText" class="quote">Add a review to see quotes here!</p>
+                <p id="quoteSource" class="quote-source"></p>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
